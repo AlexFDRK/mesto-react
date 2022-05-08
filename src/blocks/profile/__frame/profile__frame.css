@@ -1,0 +1,19 @@
+.profile__frame{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile__frame:hover .profile__avatar{
+    opacity: .2;
+    transition: .3s ease;
+}
+
+.profile__frame:hover .profile__overlay{
+    opacity: 1;
+}

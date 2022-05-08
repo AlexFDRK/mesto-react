@@ -1,0 +1,10 @@
+.view__description{
+    position: absolute;
+    padding: 0;
+    margin: 10px 0 0 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    left: 0;
+    bottom: -25px;
+}

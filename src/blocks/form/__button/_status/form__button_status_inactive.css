@@ -1,0 +1,9 @@
+.form__button_status_inactive{
+    color: black;
+    background: white;
+    pointer-events: none;
+    user-select: none;
+    border: solid 1px black;
+    transition: 0.3s;
+    opacity: 0.2;
+}

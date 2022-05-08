@@ -1,0 +1,20 @@
+.element__bin{
+    display: none;
+    border: none;
+    outline: none;
+    background-image: url("../../../images/bin.svg");
+    background-color: transparent;
+    background-size: cover;
+    margin-right: 5px;
+    width: 18px;
+    height: 19px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.element__bin:hover{
+    opacity: 60%;
+    transition: 0.5s;
+}
