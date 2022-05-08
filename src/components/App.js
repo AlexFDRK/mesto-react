@@ -1,8 +1,8 @@
 import "../index.css";
 import { EMTY_CARD } from "../utils/constants";
 import { useEffect, useState } from "react";
-import Header from "../components/Header";
 import Main from "../components/Main";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PopupWithForm from "./PopupWithForm";
 import ImagePopup from "./ImagePopup";
