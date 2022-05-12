@@ -29,27 +29,27 @@ function App() {
         setCurrentUser(userData);
         setCards(cardsData);
       })
-      .catch((err) => {
+      .catch(err => {
         alert(err);
       });
   }, []);
 
   function handleCardLike(card) {
-    const isLiked = card.likes.some((i) => i._id === currentUser._id);
+    const isLiked = card.likes.some(i => i._id === currentUser._id);
 
     api
       .changeLikeCardStatus(card._id, isLiked)
-      .then((newCard) => {
-        setCards((cardsArray) =>
-          cardsArray.map((c) => (c._id === card._id ? newCard : c))
+      .then(newCard => {
+        setCards(cardsArray =>
+          cardsArray.map(c => (c._id === card._id ? newCard : c))
         );
       })
-      .catch((err) => {
+      .catch(err => {
         alert(err);
       });
   }
 
-  const validateValue = (target) => {
+  const validateValue = target => {
     if (target === "" || target === null || target.length === 0) {
       return false;
     }
@@ -89,7 +89,7 @@ function App() {
     setAvatarIsVisible(true);
   };
 
-  const handleCardClick = (value) => {
+  const handleCardClick = value => {
     setSelectedCard(value);
   };
 
@@ -105,11 +105,11 @@ function App() {
     setShowLoadingDesc(true);
     api
       .patchProfile({ name, about })
-      .then((data) => {
+      .then(data => {
         setCurrentUser(data);
         closeAllPopups();
       })
-      .catch((err) => {
+      .catch(err => {
         alert(err);
       })
       .finally(() => {
@@ -117,17 +117,17 @@ function App() {
       });
   };
 
-  const handleUpdateAvatar = (link) => {
+  const handleUpdateAvatar = link => {
     setShowLoadingDesc(true);
     api
       .patchAvatar({
-        avatar: link,
+        avatar: link
       })
-      .then((data) => {
+      .then(data => {
         setCurrentUser(data);
         closeAllPopups();
       })
-      .catch((err) => {
+      .catch(err => {
         alert(err);
       })
       .finally(() => {
@@ -139,11 +139,11 @@ function App() {
     setShowLoadingDesc(true);
     api
       .postCard({ name, link })
-      .then((newCard) => {
+      .then(newCard => {
         setCards([newCard, ...cards]);
         closeAllPopups();
       })
-      .catch((err) => {
+      .catch(err => {
         alert(err);
       })
       .finally(() => {
@@ -162,13 +162,13 @@ function App() {
     api
       .deleteCard(delCard._id)
       .then(() => {
-        setCards((cardsArray) => {
-          return cardsArray.filter((item) => {
+        setCards(cardsArray => {
+          return cardsArray.filter(item => {
             return item !== delCard;
           });
         });
       })
-      .catch((err) => {
+      .catch(err => {
         alert(err);
       });
     setShowLoadingDesc(false);
