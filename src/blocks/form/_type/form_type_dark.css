@@ -1,0 +1,12 @@
+.form_type_dark{
+    align-items: center;
+    color: white;
+    background: black;
+    margin: 0 auto 61px auto;
+}
+
+@media screen and (max-width: 550px){
+    .form_type_dark{
+        margin-bottom: 48px;
+    }
+}

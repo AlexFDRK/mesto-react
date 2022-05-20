@@ -1,0 +1,22 @@
+.header__login {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  right: 0;
+  top: 0;
+  visibility: visible;
+}
+
+@media screen and (max-width: 920px) {
+  .header__login {
+    margin: 0 40px 0 27px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header__login {
+    visibility: hidden;
+    right: 24px;
+    margin: 0;
+  }
+}

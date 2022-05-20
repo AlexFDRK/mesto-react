@@ -1,0 +1,12 @@
+.header__close{
+    height: 20px;
+    width: 20px;
+    visibility: hidden;
+    margin: 5px 27px 0 0;
+    cursor: pointer;
+}
+
+.header__close:hover{
+    opacity: 60%;
+    transform: rotate(360deg);
+  }

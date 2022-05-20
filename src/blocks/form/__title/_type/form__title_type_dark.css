@@ -1,0 +1,10 @@
+.form__title_type_dark{
+    align-self: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+@media screen and (max-width: 550px){
+    .form__title_type_dark{
+        width: auto;
+    }
+}

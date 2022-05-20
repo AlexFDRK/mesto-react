@@ -20,15 +20,19 @@ const PopupWithForm = ({
           className="popup__close"
           aria-label="Выход"
           onClick={onClose}
-        ></button>
+        />
         <form className="form" name={name} noValidate onSubmit={onSubmit}>
-          <h3 className="form__title">{title}</h3>
-          <div className="form__fields">{children}</div>
+          <h3 className="form__title">
+            {title}
+          </h3>
+          <div className="form__fields">
+            {children}
+          </div>
           <button
             type="submit"
             className={`form__button ${!isBtnDisabled && BTTN_INACTIVE}`}
           >
-            {isShowLoadingDesc ? 'Сохранение...' : btnText}
+            {isShowLoadingDesc ? "Сохранение..." : btnText}
           </button>
         </form>
       </div>

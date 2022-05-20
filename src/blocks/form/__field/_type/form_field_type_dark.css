@@ -1,0 +1,5 @@
+.form__field_type_dark {
+  background: black;
+  color: rgba(204, 204, 204, 1);
+  border-bottom: solid 2px rgba(204, 204, 204, 1);
+}

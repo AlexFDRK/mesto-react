@@ -1,0 +1,10 @@
+.form__title_type_info{
+   margin: 0 36px 60px 36px;
+   text-align: center; 
+}
+
+@media screen and (max-width: 550px){
+    .form__title_type_info{
+        margin: 0 18px 50px 18px;
+    }
+}
