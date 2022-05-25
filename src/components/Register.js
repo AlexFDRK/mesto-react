@@ -39,7 +39,7 @@ const Register = ({ onRegister, error }) => {
     <LogForm
       title="Регистрация"
       btnText="Зарегистрироваться"
-      linkText="Уже зарегистрированы? Войти"
+      linkText="Войти"
       onSubmit={handleSubmit}
     >
       <input

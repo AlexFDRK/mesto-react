@@ -15,9 +15,13 @@ const LogForm = ({ title, children, btnText, linkText, onSubmit }) => {
         {btnText}
       </button>
       {linkText
-        ? <Link to="/sign-in" className="form__link form__link_type_dark">
+        ?
+        <div className="form__link-introduce">
+          Уже зарегистрированы?
+          <Link to="/sign-in" className="form__link form__link_type_dark">
             {linkText}
           </Link>
+        </div>
         : ""}
     </form>
   );

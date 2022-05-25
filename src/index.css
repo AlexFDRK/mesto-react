@@ -61,6 +61,7 @@
 @import url(../src/blocks/form/__button/_status/form__button_status_inactive.css);
 @import url(../src/blocks/form/__field/_type/form__field_type_error.css);
 @import url(../src/blocks/form/__link/form__link.css);
+@import url(../src/blocks/form/__link-introduce/form__link-intoduce.css);
 @import url(../src/blocks/form/__pictogramm/form__pictogram.css);
 @import url(../src/blocks/form/__info/form__info.css);
 @import url(../src/blocks/form/__title/_type/form__title_type_info.css);
